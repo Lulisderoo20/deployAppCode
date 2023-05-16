@@ -1,0 +1,71 @@
+<div className="date-container flex flex-row gap-2 items-center">
+          {row.original.paid_at
+            ? renderCellValue(row.original.paid_at, 'DateTimeCell')
+            : renderCellValue(row.original.created_at, 'DateTimeCell')}
+          <InfoCircleOutlined style={{ color: 'var(--green-main-color-text)', fontSize: '16px' }} />
+          <div className="date-tooltip flex flex-col justify-start text-left gap-1">
+            {row.original.paid_at && (
+              <span>
+                {t('giftcards.table.paid_at')}
+                :
+                {' '}
+                {renderCellValue(row.original.paid_at, 'DateTimeCell')}
+              </span>
+            )}
+            {row.original.created_at && (
+              <span>
+                {t('giftcards.table.created_at')}
+                :
+                {' '}
+                {renderCellValue(row.original.created_at, 'DateTimeCell')}
+              </span>
+            )}
+            {row.original.expires_at && (
+              <span>
+                {t('giftcards.table.expires_at')}
+                :
+                {' '}
+                {renderCellValue(row.original.expires_at, 'DateTimeCell')}
+              </span>
+            )}
+          </div>
+        </div>
+
+
+
+.date-container {
+     position: relative;
+}
+   
+.date-tooltip {
+     visibility: hidden;
+     background-color: var(--color-modal-background);
+     color: var(--color-text);
+     font-size: 14px;
+     font-weight: 500;
+     min-width: 270px;
+     text-align: justify;
+     border-radius: 4px;
+     padding: 10px;
+     position: absolute;
+     z-index: 1;
+     top: -50%;
+     left: 100%;
+     margin-left: 15px;
+     box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.6);
+}
+
+.date-tooltip::after {
+     content: "";
+     position: absolute;
+     top: 13%;
+     right: 100%;
+     margin-left: 0px;
+     border-width: 5px;
+     border-style: solid;
+     border-color: transparent var(--color-modal-background) transparent transparent;
+}
+
+.date-container:hover .date-tooltip {
+     visibility: visible;
+}
