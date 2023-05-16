@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./LandingPage.module.css";
-import pokemonImage from "../../assets/logo.png";
+import pokemonImage from "../../assets/logo2.png";
 // import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getPokemons, getTypes } from "../../redux/action";

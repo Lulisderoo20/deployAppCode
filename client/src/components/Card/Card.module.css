@@ -87,7 +87,7 @@
   padding: 1.3em 3em;
   font-size: 12px;
   height: 250px;
-  width: 160px;
+  width: 170px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
@@ -99,6 +99,7 @@
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+
 }
 
 .card:hover {

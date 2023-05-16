@@ -26,7 +26,7 @@ function App() {
           marginTop: "3%",
           color: "#f0c305"
         }}
-      >Lucia Lisdero © Copyright Pigmaleon Studio . All rights reserved.
+      >AppXeneta -jaja- © Copyright Pigmaleon Studio . All rights reserved.
       
       </div>
     </div>

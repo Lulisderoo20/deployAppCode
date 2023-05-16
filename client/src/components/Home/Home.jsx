@@ -63,12 +63,12 @@ export default function Home(){
             <div className={styles.nav}>
 
             <Link className={styles.link} to='/'>
-            <h1 className={styles.title}>POKEDEX</h1>
+            <h1 className={styles.title}>APPCODE</h1>
                 </Link>
 
               
 
-                <button onClick={rechargePokemon} className={styles.button}>Recharge</button>
+                <button onClick={rechargePokemon} className={styles.button}>News</button>
 
                 <select onChange={(e) => handleSort(e) } className={styles.button}>
                     <option value= 'none'>Order</option>
@@ -79,7 +79,7 @@ export default function Home(){
                     </select>
 
             <select onChange={filterType} className={styles.button}>
-                <option value="all">All types</option>
+                <option value="all">All techs</option>
                 {allTypes.map((t) => (
                 <option key={t.name} value={t.name}>{t.name}</option>
                 ))}
@@ -91,7 +91,7 @@ export default function Home(){
                 <option value='false'>Existent</option>
             </select>
 
-            <Link to='/pokemon'><button className={styles.button}>Create Pokemon</button></Link>
+            <Link to='/pokemon'><button className={styles.button}>Create Code</button></Link>
 
             <SearchBar />
 
