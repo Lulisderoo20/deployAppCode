@@ -56,7 +56,7 @@ export default function Detail() {
           }
         >
           <button className={styles.roundButton} onClick={handleClick}></button>
-<div className={styles.centrar}>
+<div className={styles.contenedorprincipal}>
           <div className={styles.imagePokemon}>
             <img
               src={pokemonDetail.image}
@@ -64,8 +64,15 @@ export default function Detail() {
               style={{ borderRadius: "10px", width: "250px", height: "250px" }}
             />
           </div>
+          <div className={styles.imagePokemon2}>
+            <img
+              src={pokemonDetail.image}
+              alt="Pokemon2 Image"
+              style={{ borderRadius: "10px", width: "250px", height: "250px" }}
+            />
+          </div>
 
-          <h2 className={styles.name}>{pokemonDetail.name.toUpperCase()}</h2>
+          {/* <h2 className={styles.name}>{pokemonDetail.name.toUpperCase()}</h2>
           <h4 className={styles.id}>ID: {pokemonDetail.id}</h4>
           <h4 className={styles.hp}>HP: {pokemonDetail.hp}</h4>
           <h4 className={styles.attack}>Attack: {pokemonDetail.attack}</h4>
@@ -74,15 +81,15 @@ export default function Detail() {
           <h4 className={styles.height}>Height: {pokemonDetail.height}</h4>
           <h4 className={styles.weight}>Weight: {pokemonDetail.weight}</h4>
 
-          <h3 className={styles.type}>Types:</h3>
-          <div className={styles.types}>
+          <h3 className={styles.type}>Types:</h3> */}
+          {/* <div className={styles.types}>
             {pokemonDetail &&
               pokemonDetail.types.map((e) => (
                 <h4 key={e.name}>
                   {e.name[0].toUpperCase() + e.name.slice(1)}
                 </h4>
               ))}
-          </div>
+          </div> */}
           </div>
         </div>
       </div>

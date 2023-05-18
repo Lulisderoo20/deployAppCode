@@ -50,7 +50,7 @@ body {
   display: block;
   height: 580px;
   width: 900px;
-  background-image: url("../../assets/PokedexOriginal.png");
+  /* background-image: url("../../assets/PokedexOriginal.png"); */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 90%;
@@ -63,7 +63,7 @@ body {
   display: block;
   height: 580px;
   width: 900px;
-  background-image: url("../../assets/PokedexVerde.png");
+  /* background-image: url("../../assets/PokedexVerde.png"); */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 90%;
@@ -76,7 +76,7 @@ body {
   display: block;
   height: 580px;
   width: 900px;
-  background-image: url("../../assets/PokedexNaranja3.png");
+  /* background-image: url("../../assets/PokedexNaranja3.png"); */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 90%;
@@ -100,20 +100,23 @@ body {
   }
 }
 
-.centrar {
-    animation-name: none;
-  cursor: pointer;
-  margin: 1%;
-  animation: computerFlashAnimation 0.5s linear;
-}
-.centrar:hover {
+.contenedorprincipal {
+  display: flex;
     animation-name: none;
   cursor: pointer;
   margin: 1%;
   animation: computerFlashAnimation 0.5s linear;
 }
 
-.centrar:active {
+
+.contenedorprincipal:hover {
+    animation-name: none;
+  cursor: pointer;
+  margin: 1%;
+  animation: computerFlashAnimation 0.5s linear;
+}
+
+.contenedorprincipal:active {
     animation-name: none;
   cursor: pointer;
   margin: 1%;
@@ -133,16 +136,23 @@ body {
 }
 
 button.roundButton {
-  border-radius: 50%;
-  width: 10%;
-  height: 15%;
-  background-color: green;
+  border-radius: 30%;
+  width: 4%;
+  height: 6%;
+  background-color: rgb(198, 202, 185);
   border: none;
   cursor: pointer;
   margin-right: 73%;
   margin-bottom: 0;
   margin-top: 1%;
   animation: flash 0.5s 1;
+}
+
+.imagePokemon {
+  position: absolute;
+  padding-top: 3%;
+  padding-left: 9.85%;
+  transform: scale(1.05);
 }
 
 .imagePokemon {
